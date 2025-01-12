@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+    <head><center> BANDHAN BANK<br> <br>Daily Sheet Calculator <br> 
+      Kailashahar BU<BR>
+        Sourabh Deb<BR>
+          287999<br><br>
+          <br>
+
+        </center>
+        <style>
+            /*for styling purpose only */
+td:last-child,
+input {
+  text-align: right;
+}
+        </style>
+            <script src="/scripts/snippet-javascript-console.min.js?v=2"></script>
+            <title>
+            </title>
+    </head>
+    <body>
+    <table>
+  <tr>
+    <th>Amount of Demund</th>
+    <th>Amount of Pending</th>
+    <th>  EMI Coll </th>
+    <th>Total Coll </th>
+    <th>Total sevibgs </th>
+  </tr>
+ 
+  <tr>
+    <td><input id="usd-100" type="number"  > </td>
+    <td><input id="usd-1100" type="number" > </td>
+    <td><output for="usd-100">0</output> </td>
+    <td><input id="usd-21" type="number"  > </td>
+    <td><output for="usd-21">0</output> </td>
+  </tr>
+  
+  <tr>
+    <td><input id="usd-50" type="number" step="1" min="" value=""></td>
+    <td><input id="usd-150" type="number" step="1" min="" value=""> </td>
+    <td><output for="usd-50">0</output> </td>
+    <td><input id="usd-22" type="number"  > </td>
+    <td><output for="usd-22">0</output> </td>
+  </tr>
+  <tr>
+    <td><input id="usd-25" type="number" step="1" min="" value=""></td>
+    <td><input id="usd-125" type="number" step="1" min="" value=""> </td>
+    <td><output for="usd-25">0</output> </td>
+    <td><input id="usd-23" type="number"  > </td>
+    <td><output for="usd-23">0</output> </td>
+  </tr>
+  <tr>
+    <td><input id="usd-10" type="number" step="1" min="" value=""></td>
+    <td><input id="usd-110" type="number" step="1" min="" value=""> </td>
+    <td><output for="usd-10">0</output> </td>
+    <td><input id="usd-24" type="number"  > </td>
+    <td><output for="usd-24">0</output> </td>
+  </tr>
+  <tr>
+    <td><input id="usd-5" type="number" step="1" min="" value=""></td>
+    <td><input id="usd-15" type="number" step="1" min="" value=""> </td>
+    <td><output for="usd-5">0</output> </td>
+    <td><input id="usd-s25" type="number"  > </td>
+    <td><output for="usd-s25">0</output> </td>
+  </tr>
+  <tr>
+    <td><input id="usd-1" type="number" step="1" min="" value=""></td>
+    <td><input id="usd-11" type="number" step="1" min="" value=""> </td>
+    <td><output for="usd-1">0</output> </td>
+    <td><input id="usd-26" type="number"  > </td>
+    <td><output for="usd-26">0</output> </td>
+  </tr>
+  <tr>
+    <td colspan="1">Total Coll</td>
+    <td><output id="sum-total">0</output> </td>
+  </tr>
+  <td colspan="1"> Total Pending</td>
+  <td><output id="1sum-total">0</output> </td>
+  </tr>
+  <td colspan="1"> Total Sevings</td>
+  <td><output id="2sum-total">0</output> </td>
+  </tr>
+</table>
+        <script type="text/javascript">
+            // eventListener to listen to change Events of the inputs
+document.querySelectorAll('input').forEach(el =>
+  el.addEventListener('change', function() {
+    // getting the value of the inputs
+    let usd_100 = +document.querySelector('#usd-100').value,
+    usd_1100 = +document.querySelector('#usd-1100').value,
+   // usd_3000 = +document.querySelector('#usd-3000').value,
+    //usd_4000 = +document.querySelector('#usd-4000').value,
+        usd_50  = +document.querySelector('#usd-50').value,
+        usd_150  = +document.querySelector('#usd-150').value,
+        usd_25  = +document.querySelector('#usd-25').value,
+        usd_125  = +document.querySelector('#usd-125').value,
+        usd_10  = +document.querySelector('#usd-10').value,
+        usd_110  = +document.querySelector('#usd-110').value,
+        usd_5   = +document.querySelector('#usd-5').value,
+        usd_15   = +document.querySelector('#usd-15').value,
+        usd_1   = +document.querySelector('#usd-1').value;
+        usd_11   = +document.querySelector('#usd-11').value;
+
+
+        usd_21   = +document.querySelector('#usd-21').value;
+        usd_22   = +document.querySelector('#usd-22').value;
+        usd_23   = +document.querySelector('#usd-23').value;
+        usd_24   = +document.querySelector('#usd-24').value;
+        usd_s25   = +document.querySelector('#usd-s25').value;
+        usd_26   = +document.querySelector('#usd-26').value;
+        
+
+    // calculating the sum of each row
+    let sum_usd_100 = usd_100 - usd_1100,
+   // sum_usd_3000 = usd_3000 - usd_4000,
+        sum_usd_50  = usd_50 - usd_150,
+        sum_usd_25  = usd_25 - usd_125,
+        sum_usd_10  = usd_10 - usd_110,
+        sum_usd_5   = usd_5 - usd_15,
+        sum_usd_1   = usd_1 - usd_11;
+
+
+        susd_21 =  usd_21-sum_usd_100,
+        susd_22 =   usd_22-sum_usd_50,
+        susd_23 =   usd_23-sum_usd_25,
+        susd_24 =   usd_24-sum_usd_10,
+        susd_s25 =   usd_s25-sum_usd_5,
+        susd_26 =   usd_26-sum_usd_1,
+
+   /* p1=usd_1100,
+//  p2=usd_3000+0,
+    p3=usd_150,
+    p4=usd_125,
+    p5=usd_110,
+    p6=usd_15,
+    p7=usd_11,*/
+    
+    // outputting the sum of each row
+    document.querySelector('output[for="usd-100"]').value = sum_usd_100;
+   // document.querySelector('output[for="usd-3000"]').value = sum_usd_3000;
+    document.querySelector('output[for="usd-50"]').value = sum_usd_50;
+    document.querySelector('output[for="usd-25"]').value = sum_usd_25;
+    document.querySelector('output[for="usd-10"]').value = sum_usd_10;
+    document.querySelector('output[for="usd-5"]').value = sum_usd_5;
+    document.querySelector('output[for="usd-1"]').value = sum_usd_1;
+
+
+
+
+    document.querySelector('output[for="usd-21"]').value = susd_21;
+   // document.querySelector('output[for="usd-3000"]').value = sum_usd_3000;
+    document.querySelector('output[for="usd-22"]').value = susd_22;
+    document.querySelector('output[for="usd-23"]').value = susd_23;
+    document.querySelector('output[for="usd-24"]').value = susd_24;
+    document.querySelector('output[for="usd-s25"]').value = susd_s25;
+    document.querySelector('output[for="usd-26"]').value = susd_26;
+
+  // document.getElementById("usd-1100").value;
+   //document.getElementById("usd-4000").value = p2;
+  // document.getElementById("usd-150").value;
+  /* document.getElementById("usd-125").value = p4;
+    document.getElementById("usd-110").value = p5;
+   document.getElementById("usd-15").value = p6;
+    document.getElementById("usd-11").value*/
+    
+    // getting the total sum of the entire column
+    
+    document.querySelector('#sum-total').value = sum_usd_100 + sum_usd_50 + sum_usd_25 + sum_usd_10 + sum_usd_5 + sum_usd_1;
+   //document.getElementById('1sum-total').innerHTML = p1+p3+p4+p5+p6+p7;
+   document.getElementById('1sum-total').innerHTML = usd_1100+usd_150 +usd_125+ usd_110+usd_15+usd_11;
+   document.getElementById('2sum-total').innerHTML = susd_21+susd_22 +susd_23+ susd_24+susd_s25+susd_26;
+  })
+)
+        </script>
+    </body>
+</html>
