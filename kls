@@ -1,12 +1,13 @@
 
 <!DOCTYPE html>
 <html>
-    <head><center> BANDHAN BANK<br> <br>Daily Sheet Calculator <br> 
+    <head><center><b>
+    BANDHAN BANK<br> <br>Daily Sheet Calculator <br> 
       Kailashahar BU<BR>
         Sourabh Deb<BR>
           287999<br><br>
           <br>
-
+        </b> 
         </center>
         <style>
             /*for styling purpose only */
@@ -23,65 +24,75 @@ input {
     <table>
   <tr>
     <th>Amount of Demund</th>
-    <th>Amount of Pending</th>
     <th>  EMI Coll </th>
+    <th>. Total sevibgs </th>
     <th>Total Coll </th>
-    <th>Total sevibgs </th>
+    <th>Amount of Pending</th>
+   
+   
+   
   </tr>
  
   <tr>
     <td><input id="usd-100" type="number"  > </td>
-    <td><input id="usd-1100" type="number" > </td>
     <td><output for="usd-100">0</output> </td>
-    <td><input id="usd-21" type="number"  > </td>
     <td><output for="usd-21">0</output> </td>
+    <td><input id="usd-21" type="number"  > </td>
+    <td><input id="usd-1100" type="number" > </td>
   </tr>
   
   <tr>
     <td><input id="usd-50" type="number" step="1" min="" value=""></td>
-    <td><input id="usd-150" type="number" step="1" min="" value=""> </td>
+    
     <td><output for="usd-50">0</output> </td>
-    <td><input id="usd-22" type="number"  > </td>
     <td><output for="usd-22">0</output> </td>
+    <td><input id="usd-22" type="number"  > </td>
+    <td><input id="usd-150" type="number" step="1" min="" value=""> </td>
   </tr>
   <tr>
     <td><input id="usd-25" type="number" step="1" min="" value=""></td>
-    <td><input id="usd-125" type="number" step="1" min="" value=""> </td>
+   
     <td><output for="usd-25">0</output> </td>
-    <td><input id="usd-23" type="number"  > </td>
     <td><output for="usd-23">0</output> </td>
+    <td><input id="usd-23" type="number"  > </td>
+    
+    <td><input id="usd-125" type="number" step="1" min="" value=""> </td>
   </tr>
   <tr>
     <td><input id="usd-10" type="number" step="1" min="" value=""></td>
-    <td><input id="usd-110" type="number" step="1" min="" value=""> </td>
+   
     <td><output for="usd-10">0</output> </td>
-    <td><input id="usd-24" type="number"  > </td>
     <td><output for="usd-24">0</output> </td>
+    <td><input id="usd-24" type="number"  > </td>
+    <td><input id="usd-110" type="number" step="1" min="" value=""> </td>
   </tr>
   <tr>
     <td><input id="usd-5" type="number" step="1" min="" value=""></td>
-    <td><input id="usd-15" type="number" step="1" min="" value=""> </td>
+    
     <td><output for="usd-5">0</output> </td>
-    <td><input id="usd-s25" type="number"  > </td>
     <td><output for="usd-s25">0</output> </td>
+    <td><input id="usd-s25" type="number"  > </td>
+    <td><input id="usd-15" type="number" step="1" min="" value=""> </td>
   </tr>
   <tr>
     <td><input id="usd-1" type="number" step="1" min="" value=""></td>
-    <td><input id="usd-11" type="number" step="1" min="" value=""> </td>
+    
     <td><output for="usd-1">0</output> </td>
-    <td><input id="usd-26" type="number"  > </td>
     <td><output for="usd-26">0</output> </td>
+    <td><input id="usd-26" type="number"  > </td>
+    <td><input id="usd-11" type="number" step="1" min="" value=""> </td>
   </tr>
   <tr>
-    <td colspan="1">Total Coll</td>
+    <td colspan="0"># Total EMI Coll Amt :-</td>
     <td><output id="sum-total">0</output> </td>
   </tr>
-  <td colspan="1"> Total Pending</td>
-  <td><output id="1sum-total">0</output> </td>
-  </tr>
-  <td colspan="1"> Total Sevings</td>
+  <td colspan="0"># Total Sevings Amt :-</td>
   <td><output id="2sum-total">0</output> </td>
   </tr>
+  <td colspan="0"># Total Pending Amt :-</td>
+  <td><output id="1sum-total">0</output> </td>
+  </tr>
+  
 </table>
         <script type="text/javascript">
             // eventListener to listen to change Events of the inputs
